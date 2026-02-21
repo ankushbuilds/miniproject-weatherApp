@@ -10,16 +10,19 @@
 body {
     background: #101010;
     color: #171717;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .container {
     background-color: #fff;
     padding: 2rem;
-    width: 40%;
+    width: 90%;
+    max-width: 500px;
     margin: 4rem auto;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    
+    overflow: hidden;
 }
 .weather_search {
     position: relative;
@@ -33,7 +36,8 @@ body {
     padding: 0.7rem 2rem;    /* space for icon */
     border-radius: 6px;
     font-size: 0.9rem;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .weather_search i {
