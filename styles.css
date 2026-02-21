@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #101010;
+    color: #171717;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    
+}
+.weather_search {
+    position: relative;
+    display: inline-block;
+}
+.weather_search input {
+    background: #000;          /* black background */
+    color: #fff;               /* white text */
+    border: none;
+    outline: none;
+    padding: 0.7rem 2rem;    /* space for icon */
+    border-radius: 6px;
+    font-size: 0.9rem;
+    width: 300px;
+}
+
+.weather_search i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;               /* white icon */
+    font-size: 15px;
+}
+
+/* Center main weather data */
+.weather_body {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.weather_city {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.weather_date_time {
+    font-size: 0.9rem;
+    color: gray;
+    margin: 0.5rem 0 1rem;
+}
+
+.weather_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.weather_forecast {
+    border: 2px solid black;
+    border-radius: 7px;
+    background: black ;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.weather_temperature {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.weather_minmax {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+/* Weather extra info */
+.weather_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.weather_card {
+    background: #f7f7f7;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.weather_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.weather_card i {
+    font-size: 1.2rem;
+}
+
