@@ -50,7 +50,7 @@ citySearch.addEventListener('submit', (e) => {
 
 
 const getWeatherData = async () => {
-  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=76b0ec0b262fb5b88b5e16515f1cffe1`;
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=76b0ec0b262fb5b88b5e16515f1cffe1&units=metric`;
     try {
         const res = await fetch(weatherUrl);
         const data = await res.json();
@@ -62,9 +62,9 @@ const getWeatherData = async () => {
 
         cityName.innerHTML = `${name} , ${getCountryName(sys.country)}`;
         dateTime.innerHTML = getDateTime(dt);
-        w_temperature.innerHTML = `${main.temp} \u00B0F`;
-        w_minTem.innerHTML = `Min: ${main.temp_min.toFixed()} \u00B0F`;
-         w_maxtem.innerHTML = `Max: ${main.temp_max.toFixed()} \u00B0F`;
+        w_temperature.innerHTML = `${main.temp}\u00B0C`;
+        w_minTem.innerHTML = `Min: ${main.temp_min.toFixed()}\u00B0C`;
+         w_maxtem.innerHTML = `Max: ${main.temp_max.toFixed()}\u00B0C`;
 
          w_feelsLike.innerHTML = `${main.feels_like.toFixed(2)}&#176`;
          w_humidity.innerHTML = `${main.humidity}%`;
