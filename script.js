@@ -50,7 +50,7 @@ citySearch.addEventListener('submit', (e) => {
 
 
 const getWeatherData = async () => {
-  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=76b0ec0b262fb5b88b5e16515f1cffe1&units=metric`;
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3681e26d00d350d949bf95baa06d22b8&units=metric`;
     try {
         const res = await fetch(weatherUrl);
         const data = await res.json();
