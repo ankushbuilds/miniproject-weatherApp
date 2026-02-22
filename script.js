@@ -58,7 +58,7 @@ const getWeatherData = async () => {
 
         //  Showing info. on UI
         w_forecast.innerHTML = weather[0].main;
-        w_icon.innerHTML = `<img src = "http://openweathermap.org/img/wn/${weather[0].icon}@4x.png">`;
+        w_icon.innerHTML = `<img src = "https://openweathermap.org/img/wn/${weather[0].icon}@4x.png">`;
 
         cityName.innerHTML = `${name} , ${getCountryName(sys.country)}`;
         dateTime.innerHTML = getDateTime(dt);
